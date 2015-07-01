@@ -32,7 +32,7 @@ class ViewController: UIViewController {
         enter()
         }
         switch operation{
-            case "×": performOperation(){$0 * $1}
+            case "√": performOperation(){sqrt($0)}
             case "÷": performOperation{$1/$0}
             case "+":performOperation{$1+$0}
             case "−":performOperation{$1-$0}
@@ -43,6 +43,12 @@ class ViewController: UIViewController {
     func performOperation(operation:(Double,Double)->Double){
         if operandStack.count>=2{
             displayValue=operation(operandStack.removeLast(),operandStack.removeLast())
+            enter()
+        }
+    }
+    func performOperation(operation:(Double)->Double){
+        if operandStack.count>=1{
+            displayValue=operation(operandStack.removeLast())
             enter()
         }
     }
