@@ -13,6 +13,7 @@
 		1830431A1AB417590097DB1B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 183043181AB417590097DB1B /* LaunchScreen.xib */; };
 		183043261AB417590097DB1B /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183043251AB417590097DB1B /* CalculatorTests.swift */; };
 		184664BD1ACA94C200699A93 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184664BC1ACA94C200699A93 /* ViewController.swift */; };
+		188813D21B456CC700974071 /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188813D11B456CC700974071 /* CalculatorBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		183043241AB417590097DB1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		183043251AB417590097DB1B /* CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTests.swift; sourceTree = "<group>"; };
 		184664BC1ACA94C200699A93 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		188813D11B456CC700974071 /* CalculatorBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 		183043011AB417580097DB1B = {
 			isa = PBXGroup;
 			children = (
+				188813D11B456CC700974071 /* CalculatorBrain.swift */,
 				1830430C1AB417590097DB1B /* Calculator */,
 				183043221AB417590097DB1B /* CalculatorTests */,
 				1830430B1AB417590097DB1B /* Products */,
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				188813D21B456CC700974071 /* CalculatorBrain.swift in Sources */,
 				184664BD1ACA94C200699A93 /* ViewController.swift in Sources */,
 				183043101AB417590097DB1B /* AppDelegate.swift in Sources */,
 			);
@@ -289,7 +293,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -326,7 +330,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -339,6 +343,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Calculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -349,6 +354,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Calculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
